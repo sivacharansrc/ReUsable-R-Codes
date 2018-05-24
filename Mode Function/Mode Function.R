@@ -1,3 +1,4 @@
+
 ## MODE INFO ORIGINAL FUNCTION
 modeInfo <- function(y) {
   modeData <- unique(y)
