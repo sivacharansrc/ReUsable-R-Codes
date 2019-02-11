@@ -1,0 +1,27 @@
+Navigating through folders in cmd:
+
+use cd to navigate to a dir
+cd.. to navigate to a upper folder
+
+dir - list all files within the folder
+
+git commands:
+
+1. Create a git repository and copy the git url
+2. Cloning repository from github: git glone https://github.com/sivacharansrc/project_name
+3. To get the current status of the local vs remote: git status
+4. Staging files for push: git add filename (or) git add . (to add all untracked files)
+5. Commit a file for pushing: git commit -m "add comments here"
+6. Push the changes to github: git push
+7. Pull all the changes: git pull
+8. To get all commands: git
+
+GIT WORKFLOW:
+
+1. git pull
+2. git add -A (to add all files in the project)
+3. git commit -m "Adding a new file"
+
+Note: when git commit executed without any comments, it enters in to a screen which does not accept further commands. Here,
+you need to type esc > :wq to save the work and return back to the command line
+
