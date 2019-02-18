@@ -25,3 +25,28 @@ GIT WORKFLOW:
 Note: when git commit executed without any comments, it enters in to a screen which does not accept further commands. Here,
 you need to type esc > :wq to save the work and return back to the command line
 
+GITHUB BRANCHING AND MERGING BASICS:
+
+Use branching when working with a team so that you do not affect the master copy of the file. Once changes are made to the branch, the code can be reviewed, and then merged with the master
+
+TO GET THE CURRENT BRANCH
+git branch
+
+TO CREATE A NEW BRANCH
+git branch New_Branch
+
+TO SEE THE LIST OF BRANCHES
+git branch #Now you can see the master branch (with a star beside it as it is the current branch), and also the new branch created
+
+TO MOVE TO A NEW BRANCH AND START PUSHING CODE CHANGES TO THE NEW BRANCH
+git checkout New_Branch
+
+TO MERGE CHANGES TO MASTER
+git merge master # Not before merging, it is always good to checkout to master, make the pull and then again checkout the the new branch to merge
+
+# COMMIT AND PUSH THE BRANCH
+git add -A (or) git add .
+git push --set-upstream origin New_Branch
+
+# Now the rest of the pull request has to be done by other member from the team who reviews the code and accepts the changes. Watch here for more information: https://www.youtube.com/watch?v=oFYyTZwMyAg
+
