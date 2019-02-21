@@ -1,0 +1,16 @@
+Sometimes, it may not be possible to install all the python libraries, and packages in program files due to administrative access issue,
+and that may force to install python in a different directory other than program files.
+
+Though the installation directory is different, the interpreter in pycharm may always point to the old location, and hence we may receive
+error whenever we try to install packages. To overcome this issue, follow the steps below:
+
+1. Create a virtual environment from PyCharm menu and use the environment for installing all packages
+2. Virtual Environment can be created by navigating to File - Settings - Project Interpreter - Click the gear icon just next to the
+interpreter list of address bar, where you can define the path and name of the virtual environment
+3. Now from the terminal, navigate to the virtual environement folder, and then you can install packages to this virtual environment 
+using python -m pip install package_name
+4. Go to File - Settings - Project Interpreter - From the project interpreter list click Show All, and select the virtual environment
+project interpreter, and click the option "Show All Paths". Make sure that only paths associated with the virtual environment are available
+here. Remove anything that is not part of the virtual environment.
+
+Now you should able to install packages and import packages without any issues
